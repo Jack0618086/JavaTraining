@@ -1,1 +1,9 @@
 psvm = public static void main(String[] args) {}
+Ctrl + P => 可以顯示這個方法裡面可以接受什麼參數資訊
+Alt + insert => Generate
+
+Debug
+F8 (Step Over) - 跳過方法
+F7 (Step Into) - 進入方法
+F9 (Resume Program) - 繼續執行到下一個斷點或程式結束
+Shift + F8 (Step Out) - 跳出方法，返回到呼叫該方法的上一層
