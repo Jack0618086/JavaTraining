@@ -1,6 +1,7 @@
 psvm = public static void main(String[] args) {}
 Ctrl + P => 可以顯示這個方法裡面可以接受什麼參數資訊
 Alt + insert => Generate
+Ctrl + Alt + M => Extract method (將程式碼中的某段邏輯抽取出來，形成一個獨立的方法)
 
 Debug
 F8 (Step Over) - 跳過方法
