@@ -29,15 +29,47 @@ public class Student {
     }
 
     // 建立一個 print 方法
-    public void print () {
+    public void print() {
         /*System.out.printf("姓名: %s\t英文: %d\t數學: %d\t平均: %.2f%n",
                 name, english, math, (english + math) / 2.0);*/
 
         int average = getAverage();
-        System.out.println(name + "\t" + english + "\t" + math +
-                "\t" + getAverage()+ "\t" + ((average >= 60) ? "PASS":"FAILED"));
+        System.out.print(name + "\t" + english + "\t" + math +
+                "\t" + getAverage() + "\t" + ((average >= 60) ? "PASS" : "FAILED"));
 
-        if (average >= 90){
+        char grading = 'F';
+        switch (average / 10) {
+            case 10:
+            case 9:
+                grading = 'A';
+                break;
+            case 8:
+                grading = 'B';
+                break;
+            case 7:
+                grading = 'C';
+                break;
+            case 6:
+                grading = 'D';
+                break;
+            default:
+                grading = 'F';
+        }
+        System.out.println("\t" + grading);
+
+        /*if (average >= 90 && average <= 100) {
+            grading = 'A';
+        } else if (average >= 80 && average <= 89) {
+            grading = 'B';
+        } else if (average >= 70 && average <= 79) {
+            grading = 'C';
+        } else if (average >= 60 && average <= 69) {
+            grading = 'D';
+        }
+        System.out.println(grading);*/
+
+        // 練習 2
+        /*if (average >= 90){
             System.out.println("A");
         } else if (average >= 80) {
             System.out.println("B");
@@ -47,9 +79,9 @@ public class Student {
             System.out.println("D");
         } else {
             System.out.println("F");
-        }
+        }*/
 
-        /*if (getAverage() > 60) {
+        /*if (getAverage() >= 60) {
             System.out.println("\tPASS");
         } else {
             System.out.println("\tFAILED");
@@ -58,7 +90,7 @@ public class Student {
 
     // 建立一個 getAverage 方法
     public int getAverage() {
-        return (english + math)/2;
+        return (english + math) / 2;
     }
 
 }
