@@ -1,3 +1,8 @@
 statement 敘述式
 expression 運算式
+index out of bound 索引值超出範圍
+heterogeneity 異質資料
+diamond symbol 鑽石符號 <>
+Generics 一般化 / 泛型語法
+集合 => list / set / map
 通常類別名稱最後有加 S 在 Java 裡面的慣例都是工具型的類別
