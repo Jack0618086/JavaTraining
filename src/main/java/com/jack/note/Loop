@@ -1,0 +1,8 @@
+while迴圈 => 如果為 true 執行程式
+while(boolean = true){}
+
+do-while迴圈 => 至少執行一次才結束
+do(){
+}while()
+
+for (初始; 判斷; 累計) {}
