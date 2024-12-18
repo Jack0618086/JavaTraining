@@ -6,6 +6,7 @@ public class Student {
     String name;
     int english;
     int math;
+    static int pass = 60;
 
     // 可使用 Alt + insert 建立建構子
     public Student(String name, int english, int math) {
@@ -35,7 +36,7 @@ public class Student {
 
         int average = getAverage();
         System.out.print(name + "\t" + english + "\t" + math +
-                "\t" + getAverage() + "\t" + ((average >= 60) ? "PASS" : "FAILED"));
+                "\t" + getAverage() + "\t" + ((average >= pass) ? "PASS" : "FAILED"));
 
         char grading = 'F';
         switch (average / 10) {

@@ -1,12 +1,18 @@
 package com.jack.many;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.List;
+import java.util.*;
 
 public class Tester {
     public static void main(String[] args) {
+        HashMap<String, String> stocks = new HashMap<>();
+        stocks.put("2330", "台積電");
+        stocks.put("2317", "鴻海");
+        stocks.put("2330", "TSMC");
+        System.out.println(stocks.get("2330"));
+        System.out.println(stocks);
+        for (String key : stocks.keySet()){
+            System.out.println(stocks.get(key));
+        }
 //        set();
 //        list();
 //        arrayTest();

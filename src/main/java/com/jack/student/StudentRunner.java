@@ -5,8 +5,15 @@ import java.util.Scanner;
 public class StudentRunner {
     public static void main(String[] args) {
 //        userInput();
-        Student stu = new Student("Jack", 79, 79);
+        Student.pass = 50;
+        Student stu = new Student("Jack", 60, 60);
+        Student stu2 = new Student("Hank", 80, 30);
+        Student stu3 = new Student("Sean", 70, 50);
+        GraduateStudent gstu = new GraduateStudent("Jason", 70, 30, 80);
+        gstu.print(); // 因為 GraduateStudent 繼承了 student 方法所以可以使用 print 方法
         stu.print();
+        stu2.print();
+        stu3.print();
         System.out.println("High score: " + stu.highest());
     }
 
